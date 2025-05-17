@@ -1,0 +1,9 @@
+{
+    "flipkart": {
+        "url":"https://aexp.eightfold.ai/careers?intlink=us-amex-career-en-us-home-findalljobs&hl=en-GB",
+        "search_box_locator": "input[id*='main-search-box']",
+        "job_element_locator": "a[href*='phonepe/jobs/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": ""
+    }
+}

@@ -1,0 +1,21 @@
+body {
+    width: 200px;
+    font-family: Arial, sans-serif;
+}
+h2 {
+    text-align: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    margin-bottom: 10px;
+}
+button {
+    background: blue;
+    color: white;
+    border: none;
+    padding: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,147 @@
+{
+    "adobe": {
+        "url":"https://careers.adobe.com/us/en",
+        "search_box_locator": "input[placeholder*='Enter Job Title or Location']",
+        "job_element_locator": "a[href*='job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": ""
+    },
+    "amazon": {
+        "url":"https://www.amazon.jobs/content/en/locations/india/bangalore",
+        "search_box_locator": "input[placeholder*='Search for jobs by title or keyword.']",
+        "job_element_locator": "a[href*='jobs/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://www.amazon.jobs/en"
+    },
+    "apple": {
+        "url":"https://jobs.apple.com/en-in/search?location=india-INDC",
+        "search_box_locator": "searchview",
+        "job_element_locator": "a[href*='details/']",
+        "locate_search_box_by": "By.ID",
+        "link_prefix": "https://jobs.apple.com",
+        "next_button": {
+            "locator": "li[class='pagination__next']",
+            "locate_by": "By.CSS_SELECTOR"
+        }
+    },
+    "atlassian": {
+        "url":"https://www.atlassian.com/company/careers/all-jobs",
+        "search_box_locator": "input[placeholder*='Search the results']",
+        "job_element_locator": "a[href*='careers/details/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://www.atlassian.com"
+    },
+    "browserstack": {
+        "url":"https://browserstack.wd3.myworkdayjobs.com/External",
+        "search_box_locator": "input[data-automation-id*='keywordSearchInput']",
+        "job_element_locator": "a[href*='en-US/External/job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://browserstack.wd3.myworkdayjobs.com"
+    },
+    "hashicorp": {
+        "url":"https://www.hashicorp.com/en/careers/open-positions",
+        "search_box_locator": "input[type*='search']",
+        "job_element_locator": "a[href*='career/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://www.hashicorp.com/en"
+    },
+    "intel": {
+        "url":"https://jobs.intel.com/en",
+        "search_box_locator": "input[class*='search-keyword']",
+        "job_element_locator": "a[href*='en/job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://jobs.intel.com/"
+    },
+    "intuit": {
+        "url":"https://jobs.intuit.com/",
+        "search_box_locator": "input[placeholder*='e.g., job title, category or skills']",
+        "job_element_locator": "a[href*='job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://jobs.intuit.com"
+    },
+    "nvidia": {
+        "url":"https://nvidia.wd5.myworkdayjobs.com/NVIDIAExternalCareerSite",
+        "search_box_locator": "input[placeholder*='Search for jobs or keywords']",
+        "job_element_locator": "a[href*='NVIDIAExternalCareerSite/job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://nvidia.wd5.myworkdayjobs.com",
+        "next_button": {
+            "locator": "button[data-uxi-element-id='next']",
+            "locate_by": "By.CSS_SELECTOR"
+        }
+    },
+    "oracle": {
+        "url":"https://careers.oracle.com/jobs/#en/sites/jobsearch/requisitions",
+        "search_box_locator": "keyword",
+        "job_element_locator": "a[href*='careers.oracle.com/jobs/#en/sites/jobsearch/job/']",
+        "locate_search_box_by": "By.ID",
+        "link_prefix": ""
+    },
+    "phonepe": {
+        "url":"https://www.phonepe.com/careers/job-openings/",
+        "search_box_locator": "input[class*='search-input']",
+        "job_element_locator": "a[href*='phonepe/jobs/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": ""
+    },
+    "servicenow": {
+        "url":"https://careers.salesforce.com/en/jobs/",
+        "search_box_locator": "l-search",
+        "job_element_locator": "a[href*='en/jobs/']",
+        "locate_search_box_by": "By.ID",
+        "link_prefix": "https://careers.salesforce.com"
+    },
+    "stripe": {
+        "url":"https://stripe.com/jobs/search",
+        "search_box_locator": "input[placeholder*='Search for a job']",
+        "job_element_locator": "a[href*='jobs/listing/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": ""
+    },
+    "twitter": {
+        "url":"https://careers.x.com/en#positions",
+        "search_box_locator": "input[name*='search']",
+        "job_element_locator": "a[href*='X/job/']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": ""
+    },
+    "uber": {
+        "url":"https://www.uber.com/in/en/careers/",
+        "search_box_locator": "input[placeholder*='Search open roles']",
+        "job_element_locator": "a[href*='careers/list']",
+        "locate_search_box_by": "By.CSS_SELECTOR",
+        "link_prefix": "https://www.uber.com/global/en"
+    },
+    "walmart": {
+        "url":"https://careers.walmart.com",
+        "search_box_locator": "search",
+        "job_element_locator": "a[href*='careers.walmart.com']",
+        "locate_search_box_by": "By.ID",
+        "link_prefix": ""
+    },
+    "zeta": {
+        "url":"https://www.zeta.tech/in/careers/work-with-us?department=AllDepartments",
+        "search_box_locator": "searchRole",
+        "job_element_locator": "a[href*='careers/job-description']",
+        "locate_search_box_by": "By.ID",
+        "link_prefix": "https://www.zeta.tech"
+    }
+}
+
+    "adobe
+    "amazon
+    "apple
+    "atlassian
+    "browserstack
+    "hashicorp
+    "intel
+    "intuit
+    "nvidia
+    "oracle
+    "phonepe
+    "servicenow
+    "stripe
+    "twitter
+    "uber
+    "walmart
+    "zeta

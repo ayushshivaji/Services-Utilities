@@ -1,0 +1,3 @@
+my name is ayush
+user name is ayush
+name=ayush

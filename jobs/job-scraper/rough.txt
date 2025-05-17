@@ -1,0 +1,71 @@
+# knowledge_base_csv = CSVKnowledgeBase(
+#     path="./data/",
+#     # Table name: ai.csv_documents
+#     vector_db=MongoDb(
+#         collection_name="csv_documents",
+#         db_url=mdb_connection_string,
+#         wait_until_index_ready=60,
+#         wait_after_insert=300,
+#         embedder=OllamaEmbedder(id="openhermes")
+#     ),
+# )
+# knowledge_base_csv.load(recreate=True, upsert=True)
+
+#
+
+# knowledge_base = JSONKnowledgeBase(
+#     path=Path("./data/"),
+#     vector_db=MongoDb(
+#         collection_name="json_documents",
+#         db_url=mdb_connection_string,
+#         wait_until_index_ready=60,
+#         wait_after_insert=300,
+#         embedder=OllamaEmbedder(id="openhermes")
+#     ),
+# )
+# knowledge_base.load(recreate=True, upsert=True)
+
+# knowledge_base = TextKnowledgeBase(
+#     path=Path("./data/"),
+#     vector_db=MongoDb(
+#         collection_name="text_documents",
+#         db_url=mdb_connection_string,
+#         wait_until_index_ready=60,
+#         wait_after_insert=300,
+#         embedder=OllamaEmbedder(id="openhermes")
+#     ),
+# )
+#
+# knowledge_base.load(recreate=True, upsert=True)
+
+# knowledge=PDFUrlKnowledgeBase(
+#         urls=["https://agno-public.s3.amazonaws.com/recipes/ThaiRecipes.pdf"],
+#         vector_db=LanceDb(
+#             uri="tmp/lancedb",
+#             table_name="recipes",
+#             search_type=SearchType.hybrid
+#         ),
+#     )
+#
+print("Created Database")
+
+
+"""
+CREATE TABLE ai.csv_documents (
+id UUID default gen_random_uuid() PRIMARY KEY NOT NULL,
+name character varying,
+meta_data jsonb DEFAULT '{}'::jsonb,
+filters jsonb DEFAULT '{}'::jsonb,
+content text,
+embedding public.vector(1536),
+usage jsonb,
+created_at timestamp with time zone DEFAULT now(),
+updated_at timestamp with time zone,
+content_hash character varying
+);
+
+"""
+
+
+generate resume based on JD
+cold email to hrs
