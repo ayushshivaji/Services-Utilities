@@ -1,0 +1,3 @@
+uv pip install browser-use
+uv run playwright install
+uv pip install langchain-ollama
