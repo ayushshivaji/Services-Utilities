@@ -1,3 +1,6 @@
 uv pip install browser-use
 uv run playwright install
 uv pip install langchain-ollama
+
+
+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
