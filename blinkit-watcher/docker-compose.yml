@@ -2,14 +2,10 @@ version: '3.8'
 
 services:
   blinkit-watcher:
-    build: .
+    image: ayushshivaji/blinkit-watcher:latest
     container_name: blinkit-watcher
     environment:
       - NOTIFICATION_SERVICE_URL=http://host.docker.internal:10000/publish
+      - PINCODE=201017
     restart: unless-stopped
-    networks:
-      - blinkit-network
-
-networks:
-  blinkit-network:
-    driver: bridge 
+    network_mode: host
