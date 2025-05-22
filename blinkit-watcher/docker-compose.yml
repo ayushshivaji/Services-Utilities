@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  blinkit-watcher:
+    build: .
+    container_name: blinkit-watcher
+    environment:
+      - NOTIFICATION_SERVICE_URL=http://host.docker.internal:10000/publish
+    restart: unless-stopped
+    networks:
+      - blinkit-network
+
+networks:
+  blinkit-network:
+    driver: bridge 

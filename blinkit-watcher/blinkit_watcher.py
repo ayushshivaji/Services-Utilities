@@ -10,7 +10,7 @@ import urllib.parse
 load_dotenv()
 
 class BlinkitWatcher:
-    def __init__(self, product_url, pincode, notification_service_url="http://localhost:10000/publish", check_interval=15):
+    def __init__(self, product_url, pincode, notification_service_url=None, check_interval=600):
         """
         Initialize the Blinkit watcher
         
@@ -23,8 +23,8 @@ class BlinkitWatcher:
         self.base_url = product_url
         self.pincode = pincode
         self.product_url = self._add_pincode_to_url(product_url, pincode)
-        self.notification_service_url = notification_service_url
-        self.check_interval = check_interval
+        self.notification_service_url = notification_service_url or os.getenv('NOTIFICATION_SERVICE_URL', 'http://localhost:10000/publish')
+        self.check_interval = int(os.getenv('CHECK_INTERVAL', check_interval))
         self.last_check = None
         self.is_available = False
         
@@ -161,17 +161,14 @@ def main():
     # Blinkit product URL
     product_url = "https://blinkit.com/prn/hocco-aamchi-mango-ice-cream-cup/prid/657166"
     
-    # Get pincode
-    pincode = "201017"
+    # Get pincode from environment variable or use default
+    pincode = os.getenv('PINCODE', '201017')
     while not pincode.isdigit() or len(pincode) != 6:
         print("Invalid pincode. Please enter a valid 6-digit pincode.")
         pincode = input("Enter your pincode: ").strip()
     
-    # Get check interval
-    check_interval = 15
-    
     # Create and start watcher
-    watcher = BlinkitWatcher(product_url, pincode, check_interval=check_interval)
+    watcher = BlinkitWatcher(product_url, pincode)
     watcher.watch()
 
 if __name__ == "__main__":
