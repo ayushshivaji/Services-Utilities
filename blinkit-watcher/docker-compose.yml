@@ -5,7 +5,7 @@ services:
     image: ayushshivaji/blinkit-watcher:latest
     container_name: blinkit-watcher
     environment:
-      - NOTIFICATION_SERVICE_URL=http://host.docker.internal:10000/publish
+      - NOTIFICATION_SERVICE_URL=http://localhost:10000/publish
       - PINCODE=201017
     restart: unless-stopped
     network_mode: host

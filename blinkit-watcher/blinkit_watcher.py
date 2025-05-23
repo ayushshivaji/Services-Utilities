@@ -159,7 +159,7 @@ class BlinkitWatcher:
 
 def main():
     # Blinkit product URL
-    product_url = "https://blinkit.com/prn/hocco-aamchi-mango-ice-cream-cup/prid/657166"
+    product_url = os.getenv('PRODUCT_URL', "https://blinkit.com/prn/hocco-aamchi-mango-ice-cream-cup/prid/657166")
     
     # Get pincode from environment variable or use default
     pincode = os.getenv('PINCODE', '201017')
