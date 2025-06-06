@@ -1,0 +1,12 @@
+services:
+  syncthing:
+    container_name: syncthing
+    image: syncthing/syncthing:v2
+    ports:
+      - 8384:8384
+    volumes:
+      - ./synced:/var/syncthing/synced
+      - ./config:/var/syncthing/config
+    environment:
+      - TZ=America/New_York
+    restart: always

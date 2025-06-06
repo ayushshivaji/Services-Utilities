@@ -1,0 +1,10 @@
+services:
+  discord-notifier:
+    container_name: discord-notifier
+    image: ayushshivaji/discord-notifier
+    environment:
+        PORT: 10000
+        DISCORD_WEBHOOK_URL: ""
+    ports:
+      - 10000:10000
+    restart: always
