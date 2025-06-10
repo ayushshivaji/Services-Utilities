@@ -1,6 +1,17 @@
-uv pip install browser-use
-uv run playwright install
-uv pip install langchain-ollama
+# Browser Automation Agent Dependencies
 
+# Core browser automation
+playwright==1.40.0
 
-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
+# AI and language models  
+openai==1.3.0
+
+# Data handling and validation
+pydantic==2.5.0
+
+# Async HTTP requests (optional, for advanced features)
+aiohttp==3.9.0
+
+# Development and testing (optional)
+pytest==7.4.0
+pytest-asyncio==0.21.0

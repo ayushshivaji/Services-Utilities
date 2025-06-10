@@ -1,0 +1,19 @@
+# Browser-Use Agent Requirements
+
+# Core browser-use library
+browser-use
+
+# AI/LLM providers
+langchain-openai
+openai
+
+# Environment management
+python-dotenv
+
+# Optional: For advanced features
+langchain-anthropic  # If using Claude
+langchain-google-genai  # If using Gemini
+
+# Development and testing
+pytest
+pytest-asyncio 

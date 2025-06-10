@@ -1,0 +1,7 @@
+{
+  "company": "www",
+  "source_url": "https://www.hashicorp.com/en/careers/open-positions",
+  "extracted_content": "[ActionResult(is_done=True, extracted_content='[{\"job title\": \"Principal Site Reliability Engineer\", \"location\": \"Remote, United States\", \"required experience\": \"Has worked on a team of SREs or engineers to improve reliability\\\\nLoves data, analyzing data, and helping teams draw conclusions from data\\\\nIs an effective communicator, collaborator, and influencer with both engineering and product teams\\\\nIs able to identify pragmatic and ideal solutions blending customer feedback with technical foresight\\\\nIs a technical leader capable of crafting long-term strategy and vision\", \"job URL\": \"https://www.hashicorp.com/en/career/6709892\"}]', error=None, include_in_memory=False)]",
+  "timestamp": "2025-06-08T19:42:14.870078",
+  "note": "Content could not be parsed as JSON"
+}
