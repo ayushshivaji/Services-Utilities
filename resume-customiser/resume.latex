@@ -1,0 +1,100 @@
+% Ayush Srivastava - One Page Resume (Deedy Style)
+% Requires XeLaTeX
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fancyhdr}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+\lastupdated
+
+\namesection{Ayush}{Srivastava}{
+\href{mailto:ayushshivaji@gmail.com}{ayushshivaji@gmail.com} | Bengaluru, Karnataka \\
+\href{https://www.linkedin.com/in/ayush-shivaji/}{linkedin.com/in/ayush-shivaji} | 
+\href{https://github.com/ayushshivaji}{github.com/ayushshivaji} | +91 7572045453
+}
+
+\begin{minipage}[t]{0.33\textwidth} 
+
+\section{Education} 
+\subsection{KNIT Sultanpur}
+\descript{B.Tech in Electrical Engineering}
+\location{Aug 2018 -- Jun 2022 | CGPA: 7.67}
+\sectionsep
+
+\section{Certifications}
+AWS Certified Cloud Practitioner (CLF-C01)
+\sectionsep
+
+\section{Skills}
+\subsection{Cloud}
+AWS \textbullet{} GCP \textbullet{} Azure
+\subsection{DevOps}
+Docker \textbullet{} Kubernetes \textbullet{} GitLab \textbullet{} Jenkins \textbullet{} Ansible \textbullet{} Terraform \textbullet{} Helm \textbullet{} Vault
+\subsection{Monitoring}
+Prometheus \textbullet{} Grafana \textbullet{} ELK Stack
+\subsection{Programming}
+Python \textbullet{} Bash \textbullet{} Golang \textbullet{} Java \textbullet{} SQL
+\sectionsep
+
+\section{Achievements}
+Top 1\% on TryHackMe (Ethical Hacking)
+\\ Qualified UPSTSE 2017
+\sectionsep
+
+\end{minipage} 
+\hfill
+\begin{minipage}[t]{0.66\textwidth} 
+
+\section{Summary}
+DevOps Engineer with strong cloud background, CI/CD automation, and containerization. Experienced in optimizing infrastructure and enhancing system scalability. Focused on usability, performance, and team productivity.
+\sectionsep
+
+\section{Experience}
+\runsubsection{Vimaan Robotics}
+\descript{| Senior DevOps Engineer}
+\location{Feb 2025 -- Present}
+\begin{tightemize}
+\item Led a 2-person DevOps team and made architectural decisions
+\item Built internal services from scratch to streamline processes
+\item Refactored legacy deployments to reduce time by 40\%
+\end{tightemize}
+
+\runsubsection{Vimaan Robotics}
+\descript{| DevOps Engineer}
+\location{Aug 2023 -- Jan 2025}
+\begin{tightemize}
+\item Optimized CI/CD pipelines cutting build times by 50\%
+\item Led Vault secrets management overhaul across the org
+\item Automated cloud/on-prem deployments via Ansible
+\end{tightemize}
+
+\runsubsection{Zemosolabs}
+\descript{| Jr. DevOps Engineer}
+\location{Jul 2022 -- Jul 2023}
+\begin{tightemize}
+\item Managed infra using Terraform and GitHub Actions
+\item Reduced CI/CD time by 50\% and infra costs by 15\%
+\end{tightemize}
+
+\runsubsection{Zemosolabs}
+\descript{| DevOps Intern}
+\location{Feb 2022 -- Jun 2022}
+\begin{tightemize}
+\item Maintained Kubernetes clusters (99\% uptime)
+\item Used Jenkins, Terraform, AWS to reduce release time
+\item Containerized monoliths to microservices
+\end{tightemize}
+\sectionsep
+
+\section{Projects}
+\textbf{Ethical Hacking Persistence:} Automated persistence tasks using Bash scripting. \\
+\textbf{Bipedal Robot:} Worked on modeling and embedded systems with Arduino, Octave, and C.
+\sectionsep
+
+\end{minipage} 
+
+\end{document}
